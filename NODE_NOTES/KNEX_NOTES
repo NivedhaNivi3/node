@@ -1,0 +1,37 @@
+
+GET
+// select table
+
+knex('detail')
+.select('*');
+
+//selct specfic column
+
+knex('detail')
+.select('*')
+.where('id', id);
+// ---------------------
+
+POST 
+knex('detail')
+.insert ({id,name,age})
+.returning('*')
+// -------
+UPDATE
+
+knex ('detail')
+.where({id : userId})
+.update({id,name,age})
+.returning('*');
+// -----------------
+
+DELETE
+
+knex('detail')
+        .where({ id: userId })
+        .del()
+        .returning('*');
+
+        //returning('*') IS RETURND THE PROCESSED DATA
+
+        // --------------

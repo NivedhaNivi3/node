@@ -1,0 +1,16 @@
+{
+  "name": "node_with_fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.20.0",
+    "knex": "^2.5.1",
+    "pg": "^8.11.1"
+  }
+}

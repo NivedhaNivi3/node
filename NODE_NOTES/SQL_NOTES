@@ -1,0 +1,63 @@
+CREATE TABLE
+============
+
+create table employee(
+emp_id int primary key,
+	ename varchar(30),
+	job_desc varchar(20),
+	salary int 
+	
+)
+------------------------------
+view table
+=============
+select * From employee
+------------------------------
+
+INSERT Data
+==========
+
+Insert into employee values(1,'Nivedha','SoftwareEngineer',20000)
+
+
+Insert into employee values(2,'Arun','full stack',60000),
+(3,'mythili','software engineer',40000),
+(4,'Akash','project Manager',30000),
+(5,'pavanish','Associate engineer',30000),
+(6,'mithun','server team',40000)
+
+--------------------------
+
+
+WHERE CLAUSE CONDITION
+======================
+
+
+//I want to display only software engineers//
+
+select *from employee where job_desc='Software Engineer'
+
+
+//i want to fillter salary 30k and their not associate engineer//
+
+select *from employee where  salary=30000 and job_desc <> 'Associate engineer'
+
+
+//i want show employee name with above condition//
+
+select ename from employee where  salary=30000 and job_desc <> 'Associate engineer'
+
+-------------------------------------------------------------------------------------
+
+### Using Like and wildcards
+=============================
+
+LIKE  is used with WHERE clause for searching a specific pattern in a column. It is used along with the following wild cards
+
+% represents zero or more characters
+
+_ represents exactly one character
+
+
+select ename from employee like '
+
